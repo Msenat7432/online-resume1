@@ -14,8 +14,16 @@
   justify-content: center;
   transition: all 1s ease;
 
+ 
+
   &.active {
     right: 0;
+
+     @include mobile{
+        width:100%;
+        // height: 200%;
+       
+      }
   }
 
   ul {

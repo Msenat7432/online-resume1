@@ -4,11 +4,21 @@
   background-color: #8585a3 ;
   display: flex;
 
+    @include mobile {
+    flex-direction: column;
+  }
 
 
   .left {
     flex: 0.5;
     overflow: hidden;
+     @include mobile {
+          width: 400px;
+          height: 20px;
+          flex:0.8;
+          position: relative;
+          bottom: 90px;
+        }
 
     .imgContainer{
       margin-top:170px ;
@@ -21,6 +31,19 @@
       align-items: flex-end;
       justify-content: center;
       float: right;
+
+       @include mobile {
+          width: 300px;
+         height: 200px;
+         display: flex;
+        align-items: center;
+        justify-content: center;
+         
+         
+
+       
+         
+        }
         }
 
     img {
@@ -28,6 +51,12 @@
       height: 30%;
       width: 50%;
       padding: 30px 30px;
+
+       @include mobile {
+          width: 60px;
+          height: 90px;
+          padding: 30px 30px;
+        }
     } 
 
   }
@@ -37,6 +66,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+     @include mobile {
+         flex:0.5 ;
+        }
 
     h2 {
       font-size: 30px;
@@ -49,11 +81,20 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+       @include mobile {
+          width: 200px;
+          height: 200px;
+        }
 
       input {
         width: 300px;
         height: 30px;
         font-size: 14px;
+
+         @include mobile {
+          width: 200px;
+          height: 20px;
+        }
 
        
       }
@@ -62,6 +103,10 @@
         width: 300px;
         height: 200px;
         font-size: 14px;
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
 
        
       }
