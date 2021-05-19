@@ -9,6 +9,12 @@
   top: 0;
   z-index: 3;
   transition: all 1s ease;
+  overflow: hidden;
+
+  a{
+          color:white;
+         text-decoration:none;
+       }
 
   .wrapper {
     padding: 10px 30px;
